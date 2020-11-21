@@ -24,7 +24,9 @@ class MoviesController extends Controller
         $thumbs = Thumbs_ups::all();
         $movies = Movie::all();
         $user = [];
-
+        $user = "";
+        $user_id = '';
+                
         // count thumbs up for each movie
         foreach($thumbs as $thumb) {
             foreach($movies as $key => $movie){
